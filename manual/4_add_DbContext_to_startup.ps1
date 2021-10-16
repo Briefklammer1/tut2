@@ -21,6 +21,6 @@ $fileContent | Set-Content $filename
         if ($_ -match "using Microsoft.OpenApi.Models;") 
         {
             #Add Lines after the selected pattern 
-            "using PlatformService.Data;"
+            "using $app_name.Data;"
         }
     } | Set-Content $fileName
